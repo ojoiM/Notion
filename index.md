@@ -1,6 +1,6 @@
 ---
 title: "titulo teste"
-date: YYYY-MM-DD
+date: 2025-02-10
 ---
 ---
 teste teste
