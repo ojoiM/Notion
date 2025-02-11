@@ -11,7 +11,9 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        .header {
+          .header {
+            position: relative;
+            width: 100%;
             font-size: 24px;
             padding: 20px;
             background: linear-gradient(to right, purple, blue);
@@ -35,7 +37,26 @@
             border-radius: 10px;
             flex: 1;
         }
-        .videos {
+          .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .highlight-box {
+            width: 150px; /* Ajuste o tamanho dos quadradinhos */
+            height: 150px;
+            background: lightblue;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
             flex: 2; /* Deixa os vídeos maiores */
         }
         .pesquisa {
@@ -48,19 +69,22 @@
 </head>
 <body>
     <div class="header">✨ Meu Espaço de Pesquisa ✨ <img src="mago.gif" alt="Mago Meditando" width="50"></div>
-    
-    <div class="container">
+    </div>
+    <img src="https://i.pinimg.com/736x/5a/1d/53/5a1d53179b7309b5cb27bcc37abbf12c.jpg" alt="Imagem Destacada" style="position: absolute; top: 20px; right: 20px; max-width: 150px; height: auto;">
+
+<div class="container">
         <div class="content">
             <div class="box links">
                 <h3>Links de Compra</h3>
                 <a href="#">Estante Virtual</a><br>
                 <a href="#">Amazon</a>
-            </div>
-            <div class="box videos">
-                <h3>Vídeos</h3>
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-            </div>
-        </div>
+    <!-- Área de Vídeos -->
+    <div class="video-container">
+       <h3>Vídeos</h3>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+            
         
         <div class="pesquisa">
             <h3>Pesquisas</h3>
