@@ -3,6 +3,7 @@
 O código atual:
 
 .mago-img {
+
     position: absolute;
     left: 10px;
     width: 100px;
@@ -34,6 +35,7 @@ css
 Copiar
 Editar
 .content {
+
     display: flex;
     justify-content: space-between;
     width: 100%;
