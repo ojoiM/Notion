@@ -5,123 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Espaço de Pesquisa</title>
     <style>
+        /* Configuração geral da página */
         body {
             background-color: #121212;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .header {
-            position: relative;
-            width: 100%;
-            font-size: 24px;
-            padding: 20px;
-            background: linear-gradient(to right, purple, blue);
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .mago-img {
-            position: absolute;
-            left: 20px;
-            width: 300px;
-            height: auto;
-        }
-          .container {
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80%;
-            margin: auto;
+            height: 100vh;
         }
-        .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch; /* Faz com que os elementos cresçam para ocupar o espaço vertical */
-    gap: 20px;
 
-    align-items: flex-start; /* Garante que os itens fiquem alinhados no topo */
-}
+        /* Cabeçalho e imagem do mago */
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to right, purple, blue);
+            border-radius: 10px;
+        }
+
+        .mago-img {
+            width: 120px;
+            height: auto;
+        }
+
+        .header {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* Estrutura principal usando Grid */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Duas colunas principais */
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        /* Coluna esquerda: Bloco empilhado (Links + Pesquisas) */
+        .coluna-esquerda {
+            display: flex;
+            flex-direction: column; /* Empilha os itens verticalmente */
+            gap: 20px;
+        }
+
         .box {
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-        .links-compras {
-            width: 25%;
-        }
-        .pesquisa {
-    width: 100%;
-    margin-top: 10px;
-}
-        .side-column {
-    display: flex;
-    flex-direction: column; /* Mantém "Links de Compra" e "Pesquisa" empilhados */
-    gap: 20px;
-    width: 30%;
-        }
+
+        /* Container de vídeos */
         .video-container {
-           display: flex;
-          flex-direction: column;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-height: 400px;
             overflow-y: auto;
-            }
+        }
+
         .video-container iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 */
-    border-radius: 10px;
-}
-        }
-        .pesquisa.full-width {
             width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
         }
+
+        /* Responsividade para telas menores */
         @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-                align-items: center;
+            .container {
+                grid-template-columns: 1fr; /* Empilha as colunas em telas menores */
             }
-            .side-column {
-    display: flex;
-    flex-direction: column; /* Mantém "Links de Compra" e "Pesquisa" empilhados */
-    gap: 20px;
-     justify-content: space-between; /* Distribui os blocos igualmente */
-    flex: 1; /* Faz a coluna ocupar o espaço necessário */
-    min-height: 100%; /* Garante que cubra toda a altura */
-}
-            }
-            .links-compras, .pesquisa, .video-container {
-                width: 100%;
-            }
-     }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://cdn.discordapp.com/attachments/527281449825468416/1339221887611437138/me.png?ex=67adef13&is=67ac9d93&hm=97df6eebafa728dabf4cfaf6a578f7f4f871a504a84e63efee53e4f7a6addb7e&" alt="Mago AI" class="mago-img">
+
+    <!-- Cabeçalho e imagem do mago -->
+    <div class="header-container">
+        <img src="https://cdn.discordapp.com/attachments/527281449825468416/1339221887611437138/me.png?ex=67adef13&is=67ac9d93&hm=97df6eebafa728dabf4cfaf6a578f7f4f871a504a84e63efee53e4f7a6addb7e&" 
+             alt="Mago AI" class="mago-img">
         <div class="header">✨ Meu Espaço de Pesquisa ✨</div>
-     <div class="content">
-    <div class="side-column"> <!-- Novo contêiner para agrupar links e pesquisa -->
-        <div class="box links-compras">
-            <h2>Links de Compra</h2>
-            <a href="#">Estante Virtual</a><br>
-            <a href="#">Amazon</a>
-        </div>
-        <div class="box pesquisa">
-            <h3>Pesquisas</h3>
-            <p>Lista de livros e informações para lembrar.</p>
-        </div>
     </div>
 
-    <div class="video-container">
-        <h3>Vídeos</h3>
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <!-- Estrutura da página -->
+    <div class="container">
+        
+        <!-- Coluna esquerda com Links + Pesquisas empilhados -->
+        <div class="coluna-esquerda">
+            <div class="box links-compras">
+                <h2>Links de Compra</h2>
+                <a href="#">Estante Virtual</a><br>
+                <a href="#">Amazon</a>
+            </div>
+
+            <div class="box pesquisa">
+                <h3>Pesquisas</h3>
+                <p>Lista de livros e informações para lembrar.</p>
+            </div>
+        </div>
+
+        <!-- Coluna direita - Vídeos -->
+        <div class="video-container">
+            <h3>Vídeos</h3>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
     </div>
-</div>
+
 </body>
 </html>
-
