@@ -8,6 +8,7 @@ O código atual:
     left: 10px;
     width: 100px;
     height: auto;
+}
 
 position: absolute; → Faz com que a imagem fique fixada em um ponto específico.
 left: 10px; → Define que ela fique 10px afastada da borda esquerda.
@@ -41,6 +42,7 @@ Editar
     width: 100%;
     gap: 20px;
 }
+
 display: flex; → Organiza os elementos lado a lado.
 justify-content: space-between; → Faz com que os elementos fiquem distantes um do outro, ocupando o máximo de espaço disponível.
 gap: 20px; → Define um espaçamento de 20px entre os elementos.
