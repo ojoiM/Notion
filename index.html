@@ -23,7 +23,7 @@
         .mago-img {
             position: absolute;
             left: 10px;
-            width: 100px;
+            width: 200px;
             height: auto;
         }
           .container {
@@ -34,11 +34,12 @@
             margin: auto;
         }
         .content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            gap: 20px;
-        }
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    align-items: flex-start; /* Garante que os itens fiquem alinhados no topo */
+}
         .box {
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
@@ -49,8 +50,14 @@
             width: 25%;
         }
         .pesquisa {
-            width: 25%;
-            margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+        .side-column {
+    display: flex;
+    flex-direction: column; /* Mantém "Links de Compra" e "Pesquisa" empilhados */
+    gap: 20px;
+    width: 30%;
         }
         .video-container {
             width: 50%;
@@ -73,6 +80,12 @@
             .content {
                 flex-direction: column;
                 align-items: center;
+            }
+            .side-column {
+    display: flex;
+    flex-direction: column; /* Mantém "Links de Compra" e "Pesquisa" empilhados */
+    gap: 20px;
+    width: 30%;
             }
             .links-compras, .pesquisa, .video-container {
                 width: 100%;
