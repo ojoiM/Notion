@@ -33,15 +33,15 @@
         }
         .box {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+             padding: 15px;
             border-radius: 10px;
-            flex: 1;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
           .video-container {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,22 +62,28 @@
         .pesquisa {
             margin-top: 20px;
             width: 80%;
-            padding: 10px;
-            border-top: 2px solid white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
+        .mago-img {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: auto;
+
     </style>
 </head>
 <body>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/527281449825468416/1339221887611437138/me.png?ex=67adef13&is=67ac9d93&hm=97df6eebafa728dabf4cfaf6a578f7f4f871a504a84e63efee53e4f7a6addb7e&" alt="Mago AI" class="mago-img">
     <div class="header">✨ Meu Espaço de Pesquisa ✨
-    </div>
-    <img src="https://cdn.discordapp.com/attachments/527281449825468416/1339221887611437138/me.png?ex=67adef13&is=67ac9d93&hm=97df6eebafa728dabf4cfaf6a578f7f4f871a504a84e63efee53e4f7a6addb7e&" alt="Imagem Destacada" style="position: absolute; top: 20px; right: 20px; max-width: 150px; height: auto;">
-
-<div class="container">
-        <div class="content">
-            <div class="box links">
-                <h3>Links de Compra</h3>
+       <div class="content">
+            <div class="box">
+                <h2>Links de Compra</h2>
                 <a href="#">Estante Virtual</a><br>
                 <a href="#">Amazon</a>
+            </div>
     <!-- Área de Vídeos -->
     <div class="video-container">
        <h3>Vídeos</h3>
