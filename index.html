@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-          .header {
+        .header {
             position: relative;
             width: 100%;
             font-size: 24px;
@@ -27,17 +27,20 @@
         }
         .content {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
             width: 80%;
             gap: 20px;
         }
         .box {
             background: rgba(255, 255, 255, 0.1);
-             padding: 15px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
         }
-          .video-container {
+        .video-container {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
@@ -48,50 +51,49 @@
             max-height: 400px;
             overflow-y: auto;
         }
-        .highlight-box {
-            width: 150px; /* Ajuste o tamanho dos quadradinhos */
-            height: 150px;
-            background: lightblue;
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-            line-height: 150px;
-            font-weight: bold;
-            flex: 2; /* Deixa os vídeos maiores */
-        }
         .pesquisa {
             margin-top: 20px;
             width: 80%;
             padding: 15px;
             border-radius: 10px;
-            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
         }
         .mago-img {
             position: absolute;
-            left: 0;
+            left: 10px;
             width: 100px;
             height: auto;
-
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://cdn.discordapp.com/attachments/527281449825468416/1339221887611437138/me.png?ex=67adef13&is=67ac9d93&hm=97df6eebafa728dabf4cfaf6a578f7f4f871a504a84e63efee53e4f7a6addb7e&" alt="Mago AI" class="mago-img">
-    <div class="header">✨ Meu Espaço de Pesquisa ✨
-       <div class="content">
+        <div class="header">✨ Meu Espaço de Pesquisa ✨</div>
+        <div class="content">
             <div class="box">
                 <h2>Links de Compra</h2>
                 <a href="#">Estante Virtual</a><br>
                 <a href="#">Amazon</a>
             </div>
-    <!-- Área de Vídeos -->
-    <div class="video-container">
-       <h3>Vídeos</h3>
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-            
-        
+            <div class="video-container">
+                <h3>Vídeos</h3>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            </div>
+        </div>
         <div class="pesquisa">
             <h3>Pesquisas</h3>
             <p>Lista de livros e informações para lembrar.</p>
@@ -99,3 +101,4 @@
     </div>
 </body>
 </html>
+
