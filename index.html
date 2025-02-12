@@ -36,8 +36,9 @@
         .content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: stretch; /* Faz com que os elementos cresçam para ocupar o espaço vertical */
     gap: 20px;
+
     align-items: flex-start; /* Garante que os itens fiquem alinhados no topo */
 }
         .box {
@@ -60,18 +61,20 @@
     width: 30%;
         }
         .video-container {
-            width: 50%;
-            max-width: 800px;
+           display: flex;
+          flex-direction: column;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-height: 400px;
             overflow-y: auto;
-        }
-        iframe {
-            width: 100%;
-            height: 200px;
+            }
+        .video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 */
+    border-radius: 10px;
+}
         }
         .pesquisa.full-width {
             width: 100%;
@@ -85,7 +88,10 @@
     display: flex;
     flex-direction: column; /* Mantém "Links de Compra" e "Pesquisa" empilhados */
     gap: 20px;
-    width: 30%;
+     justify-content: space-between; /* Distribui os blocos igualmente */
+    flex: 1; /* Faz a coluna ocupar o espaço necessário */
+    min-height: 100%; /* Garante que cubra toda a altura */
+}
             }
             .links-compras, .pesquisa, .video-container {
                 width: 100%;
