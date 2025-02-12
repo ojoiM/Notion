@@ -7,9 +7,9 @@
     <style>
         /* Configuração geral da página */
         body {
-            background-color: #121212;
+            background-color: #191919;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Font Segoe UI;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,25 +18,33 @@
             height: 100vh;
         }
 
-        /* Cabeçalho e imagem do mago */
+         /* Cabeçalho */
         .header-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: center; /* Alinha verticalmente */
+            justify-content: center; /* Centraliza o título */
             width: 100%;
             padding: 20px;
             background: linear-gradient(to right, purple, blue);
             border-radius: 10px;
+            position: relative; /* Para posicionar o mago livremente */
         }
 
+          /* Imagem do mago posicionada à esquerda */
         .mago-img {
             width: 120px;
             height: auto;
+            position: absolute;
+            left: 20px; /* Joga o mago para a esquerda */
+            top: 50%;
+            transform: translateY(-50%); /* Centraliza verticalmente */
         }
 
+          /* Título centralizado */
         .header {
             font-size: 24px;
-            margin-top: 10px;
+            text-align: center;
+            flex-grow: 1; /* Permite o título expandir e se manter no centro */
         }
 
         /* Estrutura principal usando Grid */
