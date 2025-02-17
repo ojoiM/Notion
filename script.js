@@ -1,12 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("pesquisas.txt")
-  .then(response => response.text()) // Primeiro pega como texto
-  .then(text => JSON.parse(text)) // Depois transforma em JSON
-  .then(data => {
-    console.log(data); // Verifica se os dados estão corretos
-    // Aqui você pode usar os dados para exibir na página
-  })
-  .catch(error => console.error("Erro ao carregar JSON:", error));
+    fetch('pesquisas.txt')
         .then(response => response.json())
         .then(data => {
             let container = document.getElementById("pesquisas-container");
