@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://ojoim.github.io/Notion-page-Main/pesquisas.txt")
+    fetch("pesquisas.txt")
   .then(response => response.text()) // Primeiro pega como texto
   .then(text => JSON.parse(text)) // Depois transforma em JSON
   .then(data => {
