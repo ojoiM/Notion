@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('pesquisas.json')
+    fetch("https://ojoim.github.io/Notion-page-Main/pesquisas.json")
+  .then(response => response.text()) // Primeiro pega como texto
+  .then(text => JSON.parse(text)) // Depois transforma em JSON
+  .then(data => {
+    console.log(data); // Verifica se os dados estão corretos
+    // Aqui você pode usar os dados para exibir na página
+  })
+  .catch(error => console.error("Erro ao carregar JSON:", error));
         .then(response => response.json())
         .then(data => {
             let container = document.getElementById("pesquisas-container");
