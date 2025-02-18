@@ -1,8 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM carregado!");
-
-    
-    const dados = {
+const dados = {
         "titulo": "Minhas Pesquisas",
         "descricao": "Lista de vídeos e livros interessantes.",
         "itens": [
