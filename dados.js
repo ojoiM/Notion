@@ -13,6 +13,12 @@ const dados = {
                 "nome": "Como aprender programação",
                 "autor": "Canal Exemplo",
                 "link": "https://youtube.com/embed/Q4uWd9lyCxQ"
+            },
+                {
+                "tipo": "esse é um teste",
+                "nome": "que eu espero que de certo",
+                "autor": "lalala",
+                "link": "lululu"
             }
         ]
     };
