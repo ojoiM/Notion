@@ -24,25 +24,10 @@
             </div>
 
             <div class="box pesquisa">
-             <script src="dados.js"></script>
-<script>
-    function carregarDados() {
-        console.log("Dados carregados:", dados); // Verifica se os dados foram lidos
-
-        const lista = document.getElementById("lista");
-
-        dados.itens.forEach(item => {
-            let li = document.createElement("li");
-            li.innerHTML = `<strong>${item.tipo}:</strong> 
-                            <a href="${item.link}" target="_blank">${item.nome}</a> - ${item.autor}`;
-            lista.appendChild(li);
-        });
-    }
-
-    carregarDados();
-</script>
-                </div>
-          </div>
+                <h2>Pesquisas</h2>
+                <ul id="lista"></ul>
+            </div>
+        </div>
 
         <!-- Coluna direita - Vídeos -->
         <div class="video-container">
@@ -52,6 +37,26 @@
         </div>
 
     </div>
+
+    <!-- Carregar o JSON primeiro -->
+    <script src="dados.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof dados !== "undefined") {
+                console.log("Dados carregados:", dados);
+                const lista = document.getElementById("lista");
+
+                dados.itens.forEach(item => {
+                    let li = document.createElement("li");
+                    li.innerHTML = `<strong>${item.tipo}:</strong> 
+                                    <a href="${item.link}" target="_blank">${item.nome}</a> - ${item.autor}`;
+                    lista.appendChild(li);
+                });
+            } else {
+                console.error("Erro: 'dados' não foi carregado corretamente.");
+            }
+        });
+    </script>
 
 </body>
 </html>
