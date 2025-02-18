@@ -24,7 +24,23 @@
             </div>
 
             <div class="box pesquisa">
-             
+             <script src="dados.js"></script>
+<script>
+    function carregarDados() {
+        console.log("Dados carregados:", dados); // Verifica se os dados foram lidos
+
+        const lista = document.getElementById("lista");
+
+        dados.itens.forEach(item => {
+            let li = document.createElement("li");
+            li.innerHTML = `<strong>${item.tipo}:</strong> 
+                            <a href="${item.link}" target="_blank">${item.nome}</a> - ${item.autor}`;
+            lista.appendChild(li);
+        });
+    }
+
+    carregarDados();
+</script>
                 </div>
           </div>
 
