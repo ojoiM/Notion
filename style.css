@@ -51,7 +51,7 @@
 .icones-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 200px;
     perspective: 500px; /* Adiciona profundidade para efeito 3D */
 }
 
