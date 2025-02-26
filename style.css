@@ -43,28 +43,28 @@
         }
 
         .bloco {
-  width: 90%; /* Ou 100% se quiser ocupar a tela toda */
-  margin: 20px; 
+  width: 80%; /* Ou 100% se quiser ocupar a tela toda */
+  margin: 1px; 
 }
 
 /* Ícones lado a lado */
 .icones-container {
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 300px;
     perspective: 500px; /* Adiciona profundidade para efeito 3D */
 }
 
 .icone {
-    width: 40px; /* Reduzindo um pouco */
-    height: 80px; /* Ajuste proporcional */
+    width: 20px; /* Reduzindo um pouco */
+    height: 40px; /* Ajuste proporcional */
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
     transform-origin: left center; /* Garante que abram da lateral esquerda */
 }
 
 .icone:hover {
-    transform: rotateY(85deg);
+    transform: rotateY(70deg);
 }
 
 /* Responsividade para telas menores */
