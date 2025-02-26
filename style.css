@@ -56,10 +56,9 @@
 }
 
 .icone {
-    width: 120px; /* Diminui o tamanho */
-    height: 240px;
+    width: 324px; /* Diminui o tamanho */
+    height: 700px;
     position: relative;
-    perspective: 1000px; /* Cria o efeito 3D */
 }
 
 /* Configura a animação da porta */
