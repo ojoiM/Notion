@@ -42,29 +42,10 @@
             flex-grow: 1; /* Permite o título expandir e se manter no centro */
         }
 
-        /* Estrutura principal usando Grid */
-        .container {
-            display: grid;
-            grid-template-columns: 2fr 1fr; /* Duas colunas principais */
-            gap: 20px;
-            width: 90%;
-            max-width: 1200px;
-            margin-top: 20px;
-        }
-
-        /* Coluna esquerda: Bloco empilhado (Links + Pesquisas) */
-        .coluna-esquerda {
-            display: flex;
-            flex-direction: column; /* Empilha os itens verticalmente */
-            gap: 20px;
-        }
-
-        .box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+        .bloco {
+  width: 80%; /* Ou 100% se quiser ocupar a tela toda */
+  margin: auto; /* Para centralizar */
+}
 
 .icones-container {
     display: flex;
