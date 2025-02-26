@@ -43,7 +43,7 @@
         }
 
         .bloco {
-  width: 80%; /* Ou 100% se quiser ocupar a tela toda */
+  width: 90%; /* Ou 100% se quiser ocupar a tela toda */
   margin: auto; /* Para centralizar */
 }
 
@@ -51,7 +51,7 @@
 .icones-container {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 400px;
     perspective: 500px; /* Adiciona profundidade para efeito 3D */
 }
 
@@ -64,7 +64,7 @@
 }
 
 .icone:hover {
-    transform: rotateY(90deg);
+    transform: rotateY(85deg);
 }
 
 /* Responsividade para telas menores */
