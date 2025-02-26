@@ -66,7 +66,20 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
 
+.icones-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os ícones */
+}
 
+.icone {
+    width: 100px; /* Ajusta conforme necessário */
+    transition: transform 0.5s ease-in-out;
+}
+
+.icone:hover {
+    transform: rotateY(180deg); /* Efeito de portinha abrindo */
+}
 
         /* Responsividade para telas menores */
         @media (max-width: 768px) {
