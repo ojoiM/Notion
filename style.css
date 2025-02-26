@@ -44,7 +44,7 @@
 
         .bloco {
   width: 90%; /* Ou 100% se quiser ocupar a tela toda */
-  margin: auto; /* Para centralizar */
+  margin: 1000px; 
 }
 
 /* Ícones lado a lado */
