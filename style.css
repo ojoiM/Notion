@@ -64,14 +64,9 @@
     transform-origin: left center; /* Ou right center para outra porta */
 }
 
-.icone img {
-    width: 100%; /* Garante que a imagem se ajuste ao tamanho definido */
-    height: 100%;
-}
-
 /* Efeito ao passar o mouse - abrir a porta */
 .icone:hover img {
-    transform: rotateY(-90deg); 
+    transform: rotateY(90deg); 
 }
 
 /* Responsividade para telas menores */
