@@ -56,8 +56,8 @@
 }
 
 .icone {
-    width: 120px; /* Ajuste conforme necessário */
-    height: 240px; /* Ajuste conforme necessário */
+    width: 162px; /* Ajuste conforme necessário */
+    height: 385px; /* Ajuste conforme necessário */
     object-fit: cover; /* Garante que a imagem se ajuste corretamente */
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
