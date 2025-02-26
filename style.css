@@ -56,17 +56,23 @@
 }
 
 .icone {
-    width: 162px; /* Ajuste conforme necessário */
-    height: 385px; /* Ajuste conforme necessário */
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    width: 120px; /* Diminui o tamanho */
+    height: 240px;
+    position: relative;
+    perspective: 1000px; /* Cria o efeito 3D */
+}
+
+/* Configura a animação da porta */
+.icone img {
+    width: 100%;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
-    transform-style: preserve-3d;
-    transform-origin: left center; /* Ou right center para outra porta */
+    transform-origin: left center; /* Ponto de rotação (para abrir para fora) */
 }
 
 /* Efeito ao passar o mouse - abrir a porta */
 .icone:hover img {
-    transform: rotateY(90deg); 
+    transform: rotateY(-90deg); /* Garante que todas abram corretamente */
 }
 
 /* Responsividade para telas menores */
