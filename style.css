@@ -69,6 +69,11 @@
     height: 100%;
 }
 
+/* Efeito ao passar o mouse - abrir a porta */
+.icone:hover img {
+    transform: rotateY(-90deg); 
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .container {
