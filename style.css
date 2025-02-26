@@ -71,7 +71,7 @@
 
 /* Efeito ao passar o mouse - abrir a porta */
 .icone:hover img {
-    transform: rotateY(-90deg); /* Garante que todas abram corretamente */
+    transform: rotateY(-80deg); /* Garante que todas abram corretamente */
 }
 
 /* Responsividade para telas menores */
