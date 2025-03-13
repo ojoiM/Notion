@@ -55,10 +55,47 @@
     perspective: 500px; /* Adiciona profundidade para efeito 3D */
 }
 
-.icone {
-    width: 300px; /* Diminui o tamanho */
+/* Cada porta com tamanho igual */
+.porta-esquerda {
+    width: 300px;
     height: 500px;
     position: relative;
+}
+
+.porta-central {
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
+.porta-direita {
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
+.porta-fundo-esquerda {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+background-image: url(https://i.imgur.com/IC9468M.mp4)
+}
+
+.porta-fundo-central {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+        background-image: url(https://i.imgur.com/IC9468M.mp4)
+}
+
+.porta-fundo-direita {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+        background-image: url(https://i.imgur.com/IC9468M.mp4)
 }
 
 /* Configura a animação da porta */
