@@ -129,7 +129,7 @@ background-image: url(https://i.imgur.com/IC9468M.mp4)
     transform: rotateY(-80deg); /* Garante que todas abram corretamente */
 }
 
-.porta-esquerda:hover img {
+.porta-direita:hover img {
     transform: rotateY(-80deg); /* Garante que todas abram corretamente */
 }
 
