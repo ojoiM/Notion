@@ -99,7 +99,21 @@ background-image: url(https://i.imgur.com/IC9468M.mp4)
 }
 
 /* Configura a animação da porta */
-.icone img {
+.porta-esquerda img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left center; /* Ponto de rotação (para abrir para fora) */
+}
+
+.porta-central img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left center; /* Ponto de rotação (para abrir para fora) */
+}
+
+.porta-direita img {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
@@ -107,7 +121,15 @@ background-image: url(https://i.imgur.com/IC9468M.mp4)
 }
 
 /* Efeito ao passar o mouse - abrir a porta */
-.icone:hover img {
+.porta-esquerda:hover img {
+    transform: rotateY(-80deg); /* Garante que todas abram corretamente */
+}
+
+.porta-central:hover img {
+    transform: rotateY(-80deg); /* Garante que todas abram corretamente */
+}
+
+.porta-esquerda:hover img {
     transform: rotateY(-80deg); /* Garante que todas abram corretamente */
 }
 
