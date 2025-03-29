@@ -89,8 +89,8 @@
 /* Configuração do fundo das portas */
 .porta-fundo {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 102%;
+    height: 102%;
     background-size: cover;
     background-position: center;
     z-index: 0; /* Certifica que está atrás */
@@ -102,7 +102,7 @@
 }
 
 .porta-central .porta-fundo {
-    background-image: url('https://i.imgur.com/vylwXHe.png'); /* Troque pela imagem desejada */
+    background-image: url('https://i.imgur.com/vYkKiV1.png'); /* Troque pela imagem desejada */
 }
 
 .porta-direita .porta-fundo {
