@@ -88,9 +88,9 @@
 
 /* Configuração do fundo das portas */
 .porta-fundo {
-    position: absolute;
-    width: 110%;
-    height: 110%;
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     z-index: 0; /* Certifica que está atrás */
