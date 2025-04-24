@@ -115,7 +115,7 @@
 .porta-esquerda:hover img,
 .porta-central:hover img,
 .porta-direita:hover img {
-    transform: translateX(10px) translateY(10px) rotateY(-80deg); /* Abre a porta para revelar o fundo */
+    transform: translateX(14px) translateY(9px) rotateY(-80deg); /* Abre a porta para revelar o fundo */
 }
 
 /* Responsividade para telas menores */
