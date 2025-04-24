@@ -84,7 +84,7 @@
     height: 100%;
     transition: transform 0.5s ease-in-out;
     transform-origin: left center; /* Ponto de rotação para abrir */
-    transform: translateX(-10px) translateY(5px) rotateY(0deg);
+    transform: translateX(-20px) translateY(10px) rotateY(0deg);
 }
 
 /* Configuração do fundo das portas */
