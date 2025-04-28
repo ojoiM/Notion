@@ -3,6 +3,12 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <style>
+    iframe {
+      width: 100%;
+      height: 90vh; 
+      border: none;
+    }
+
     .floating-icon {
       position: fixed;
       top: 20px;
@@ -21,15 +27,10 @@
       padding: 20px;
       font-size: 2em;
     }
+
     .container {
       padding-left: 200px; /* Deixa espaço para o ícone */
       box-sizing: border-box;
-    }
-
-    iframe {
-      width: 100%;
-      height: 90vh; /* 90% da altura da tela */
-      border: none;
     }
   </style>
 </head>
@@ -39,20 +40,19 @@
     <div class="header"><strong> 💡✨ Pesquisas ✨💡</strong></div>
   </div>
 
-  <!-- Íconeflutuante -->
+  <!-- Ícone flutuante -->
   <div class="floating-icon">
     <a href="index.html">
       <img src="https://i.imgur.com/tCvnwlm.png" alt="Voltar">
     </a>
   </div>
 
-  <!--Miro -->
+  <!-- Miro -->
   <div class="container">
     <iframe
-  src="https://miro.com/app/board/uXjVI9CVGq4=/?share_link_id=911146169684"
-  style="width: 100%; height: 90vh; border: none;"
-  allowfullscreen
-></iframe>
+      src="https://miro.com/app/board/uXjVI9CVGq4=/?share_link_id=911146169684"
+      allowfullscreen
+    ></iframe>
   </div>
 
 </body>
