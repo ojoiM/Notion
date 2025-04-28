@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <title>Pesquisas</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    iframe {
-      width: 100%;
-      height: 90vh; 
-      border: none;
-    }
-
     .floating-icon {
       position: fixed;
       top: 20px;
       left: 20px;
-      z-index: 9999; 
+      z-index: 9999;
     }
 
     .floating-icon img {
-      width: 200px; /* Tamanho do ícone */
+      width: 200px;
       height: auto;
       cursor: pointer;
     }
@@ -32,12 +28,18 @@
       padding-left: 200px; /* Deixa espaço para o ícone */
       box-sizing: border-box;
     }
+
+    iframe {
+      width: 150%; /* Ajuste conforme teu desejo: 130%, 150%, 180%... */
+      height: 90vh; /* 90% da altura da janela */
+      border: none;
+    }
   </style>
 </head>
 <body>
 
   <div class="header-container">
-    <div class="header"><strong> 💡✨ Pesquisas ✨💡</strong></div>
+    <div class="header"><strong>💡✨ Pesquisas ✨💡</strong></div>
   </div>
 
   <!-- Ícone flutuante -->
@@ -47,12 +49,9 @@
     </a>
   </div>
 
-  <!-- Miro -->
+  <!-- Miro embed -->
   <div class="container">
-    <iframe
-      src="https://miro.com/app/board/uXjVI9CVGq4=/?share_link_id=911146169684"
-      allowfullscreen
-    ></iframe>
+    <iframe src="https://miro.com/app/board/uXjVI9CVGq4=/?share_link_id=911146169684" allowfullscreen></iframe>
   </div>
 
 </body>
