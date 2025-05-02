@@ -1,5 +1,4 @@
-/* Configuração geral da página */
-        body {
+          body {
             background-color: #191919;
             color: white;
             font-family: 'Inter', sans-serif;
@@ -11,40 +10,38 @@
             height: 100vh;
         }
 
-         /* Cabeçalho */
+      
         .header-container {
-             background-image: url('https://i.imgur.com/XPVBxmY.png');
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
+    background-image: url('https://i.imgur.com/XPVBxmY.png');
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    height: 150px; /* Mantém uma altura fixa */
-    width: 100%; /* Ocupa toda a largura */
+    height: 150px; 
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
-            position: relative; /* Para posicionar o mago livremente */
+    position: relative; 
         }
 
-          /* Imagem do mago posicionada à esquerda */
         .mago-img {
             width: 130px;
             height: auto;
             position: absolute;
-            left: 20px; /* Joga o mago para a esquerda */
+            left: 20px; 
             top: 60%;
-            transform: translateY(-50%); /* Centraliza verticalmente */
+            transform: translateY(-50%); 
         }
 
-          /* Título centralizado */
         .header {
             font-size: 24px;
             text-align: center;
-            flex-grow: 1; /* Permite o título expandir e se manter no centro */
+            flex-grow: 1; 
         }
 
-        .bloco {
-  width: 80%; /* Ou 100% se quiser ocupar a tela toda */
-  margin: auto; /* Para centralizar */
+   .bloco {
+  width: 80%; 
+  margin: auto; 
 }
 
 /* Ícones lado a lado */
@@ -52,7 +49,7 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    perspective: 500px; /* Adiciona profundidade para efeito 3D */
+    perspective: 500px; 
 }
 
 /* Cada porta com tamanho igual */
@@ -73,8 +70,6 @@
     height: 500px;
     position: relative;
 }
-
-/* Garante que a imagem da porta fique sobreposta inicialmente */
 .porta-esquerda img,
 .porta-central img,
 .porta-direita img {
@@ -83,7 +78,7 @@
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-    transform-origin: left center; /* Ponto de rotação para abrir */
+    transform-origin: left center; 
 transform: translateX(5px) translateY(9px) rotateY(0deg);
 }
 
@@ -94,20 +89,20 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
     height: 102%;
     background-size: cover;
     background-position: center;
-    z-index: 0; /* Certifica que está atrás */
+    z-index: 0; 
 }
 
 /* Definição de imagens para cada porta */
 .porta-esquerda .porta-fundo {
-    background-image: url('https://i.imgur.com/mdbE6sC.png'); /* Troque pela imagem desejada */
+    background-image: url('https://i.imgur.com/mdbE6sC.png'); 
 }
 
 .porta-central .porta-fundo {
-    background-image: url('https://i.imgur.com/vylwXHe.png'); /* Troque pela imagem desejada */
+    background-image: url('https://i.imgur.com/vylwXHe.png'); 
 }
 
 .porta-direita .porta-fundo {
-    background-image: url('https://i.imgur.com/FBtVcJR.png'); /* Troque pela imagem desejada */
+    background-image: url('https://i.imgur.com/FBtVcJR.png'); 
 }
 
 
@@ -115,7 +110,7 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 .porta-esquerda:hover img,
 .porta-central:hover img,
 .porta-direita:hover img {
-    transform: translateX(5px) translateY(9px) rotateY(-80deg); /* Abre a porta para revelar o fundo */
+    transform: translateX(5px) translateY(9px) rotateY(-80deg); 
 }
 
 /* Responsividade para telas menores */
@@ -125,6 +120,57 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*------- Pesquisas --------*/
+
+.floating-icon {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+    }
+
+    .floating-icon img {
+      width: 200px;
+      height: auto;
+      cursor: pointer;
+    }
+
+.miro-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.miro-frame {
+  width: 1500px;
+  height: 800px;
+  border: none;
+}
+
+.docs-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.magic-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.docs-frame {
+  flex-grow: 1;
+  min-width: 700px;
+  height: 800px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
     </style>
 </head>
