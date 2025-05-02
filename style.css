@@ -143,12 +143,14 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  overflow-x: auto;
 }
 
 .miro-frame {
   width: 1500px;
   height: 800px;
   border: none;
+  max-width: 100%
 }
 
 .docs-section {
