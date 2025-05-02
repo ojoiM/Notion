@@ -146,8 +146,8 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 }
 
 .miro-frame {
-  width: 1200px;
-  height: 700px;
+  width: 70vw;
+  height: 70vh;
   border: none;
 }
 
@@ -169,11 +169,10 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 
 .docs-frame {
   flex-grow: 1;
-  min-width: 950px;
-  height: 500px;
+  min-width: 57vw;
+  height: 60vh;
   border: 1px solid #ccc;
   border-radius: 8px;
- left: 20px; 
    top: 60%;
 }
     </style>
