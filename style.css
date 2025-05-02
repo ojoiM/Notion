@@ -149,7 +149,6 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
   width: 1500px;
   height: 800px;
   border: none;
-  max-width: 100%
 }
 
 .docs-section {
