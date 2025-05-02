@@ -173,6 +173,8 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
   height: 800px;
   border: 1px solid #ccc;
   border-radius: 8px;
+ left: 20px; 
+   top: 60%;
 }
     </style>
 </head>
