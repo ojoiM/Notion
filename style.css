@@ -146,7 +146,7 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 }
 
 .miro-frame {
-  width: 70vw;
+  width: 80vw;
   height: 70vh;
   border: none;
 }
