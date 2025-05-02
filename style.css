@@ -169,7 +169,7 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 
 .docs-frame {
   flex-grow: 1;
-  min-width: 700px;
+  min-width: 1000px;
   height: 800px;
   border: 1px solid #ccc;
   border-radius: 8px;
