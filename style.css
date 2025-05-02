@@ -128,8 +128,8 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 
 .floating-icon {
       position: fixed;
-      top: 10px;
-      left: 20px;
+      top: 5px;
+      left: 8px;
       z-index: 9999;
     }
 
@@ -146,7 +146,7 @@ transform: translateX(5px) translateY(9px) rotateY(0deg);
 }
 
 .miro-frame {
-  width: 80vw;
+  width: 70vw;
   height: 70vh;
   border: none;
 }
